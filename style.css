@@ -16,7 +16,7 @@ body {
 h1 {
   text-align: center;
   font-family: MAZREHA;
-  font-size: 120px;
+  font-size: 90px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -69,34 +69,31 @@ article {
 .OhNo {
   background-image: url("img/No.png");
   background-repeat: no-repeat;
-  width: 100%;
+  width: 40%;
   height: 100%;
-  position: absolute;
-  transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   transition-delay: 0.1s; /* make text start to the right of the image */
   animation-name: intro_fall;
   animation-duration: 3s;
   animation-iteration-count: initial;
   animation-timing-function: ease-in-out;
-  left: 25%;
   z-index: 100;
+  position: absolute;
+  left: 15%;
+  overflow: hidden;
 }
 .OhNo:hover {
   background-image: url('img/ohnodont.png');
-  background-repeat: no-repeat;
-  width: 60%;
-  height: 60%;
+  width: 40%;
+  height: 100%;
   position: absolute;
-  top: 45%;
   z-index: 100;
 }
 .confetti-button {
   background-image: url("img/Yes.png");
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  width: 60%;
+  height: 60%;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   transition-delay: 0.1s; /* make text start to the right of the image */
@@ -104,8 +101,10 @@ article {
   animation-duration: 3s;
   animation-iteration-count: initial;
   animation-timing-function: ease-in-out;
-  left: 65%;
   z-index: 100;
+  position: absolute;
+  left: 70%;
+
 }
 .confetti-button:hover {
   transition-duration: 0.3s;
@@ -118,6 +117,7 @@ article {
   z-index: 100;
   transform: translateX(0%);
 }
+
 
 .star {
   background-image: url("img/star.svg");
@@ -380,15 +380,18 @@ article {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-
+.container_2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .moon {
   animation-name: rise;
   animation-duration: 3s;
   animation-iteration-count: initial;
   animation-timing-function: ease-in-out;
-  margin-left: 32%;
-  width: 600px;
-  height: 600px;
+  width: 450px;
+  height: 450px;
   position: relative;
 }
 @keyframes rise {
@@ -786,7 +789,6 @@ footer {
   background: linear-gradient(180deg, #ebaabd 0%, #f1d4dd 100%);
 }
 .container {
-  position: relative;
   overflow: hidden;
 }
 .made-by-me {
