@@ -389,7 +389,7 @@ article {
   margin-left: 32%;
   width: 600px;
   height: 600px;
-  position: absolute;
+  position: relative;
 }
 @keyframes rise {
   0% {
