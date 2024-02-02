@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title></title>
+  </head>
+  <body>
+    <div></div>
+    <div class="container">
+        <main>
+          <article>
+            <div class="canvas"></div>
+            <img class="moon" src="img/moon.webp" alt="måne med roser" />
+            <h1>Hello hot stuff</h1>
+            <p>Do you want to be my valentine?</p>
+            <div class="canvas"></div>
+            <div class="button-wrapper">
+                <div class="OhNo"></div>
+                <div class="confetti-button"></div>
+            </div>
+          </article>
+          <div class="star"></div>
+          <div class="star1"></div>
+          <div class="star2"></div>
+          <div class="star3"></div>
+          <div class="star4"></div>
+          <div class="star5"></div>
+          <div class="star6"></div>
+          <div class="star7"></div>
+          <div class="star8"></div>
+          <div class="star9"></div>
+          <div class="star10"></div>
+          <div class="star11"></div>
+          <div class="bubble"></div>
+          <div class="bubble1"></div>
+          <div class="bubble2"></div>
+          <div class="bubble3"></div>
+          <div class="bubble4"></div>
+          <div class="bubble5"></div>
+          <div class="bubble6"></div>
+          <div class="bubble7"></div>
+          <div class="bubble8"></div>
+          <div class="bubble9"></div>
+          <div class="bubble10"></div>
+          <div class="bubble11"></div>
+          <div class="bubble12"></div>
+          <div class="yellow"></div>
+          <div class="blue"></div>
+          <div class="pink"></div>
+          <div class="red"></div>
+        </main>
+    </div>
+    <footer>
+        <p class="copy">© Katja Mähleke 2024</p>
+        <p class="made-by-me">Graphic and Illustration made by me</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+      document.getElementsByClassName("confetti-button")[0].addEventListener("click", () => {
+        let canvas = document.createElement("canvas");
+        canvas.width = 1500;
+        canvas.height = 1500;
+        let container = document.getElementsByClassName("canvas")[0];
+        container.appendChild(canvas);
+
+        let confetti_button = confetti.create(canvas);
+        confetti_button({
+          particleCount: 500,
+          spread: 300,
+          startVelocity: 55,
+          scalar: 1,
+          ticks: 150
+        }).then(() => container.removeChild(canvas));
+      });
+    </script>
+  </body>
+</html>

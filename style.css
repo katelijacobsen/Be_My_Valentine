@@ -1,0 +1,810 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: MAZREHA;
+  src: url('fonts/Mazreha-5146L.woff2');
+}
+@font-face {
+  font-family: DMSerif;
+  src: url('fonts/DMSerifDisplay-Regular.woff2');
+}
+body {
+  background-color: #f1d4dd;
+}
+h1 {
+  text-align: center;
+  font-family: MAZREHA;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: linear-gradient(130deg, #fa5ac4 19.69%, #eea3d4 103.19%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: static;
+  top: -15%;
+  animation-name: intro_fall;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
+  animation-timing-function: ease-in-out;
+}
+@keyframes intro_fall {
+  0%{
+    opacity: 0;
+    transform: translateY(-15%);
+  }
+  100%{
+    opacity: 100;
+  }
+  
+}
+p {
+  color: var(--PINK, #FCA0DD);
+  text-align: center;
+  font-family: 'DMSerif';
+  font-size: 64px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  position: static;
+  top: -20%;
+  margin: 0 30% 0 30%;
+  animation-name: intro_fall;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
+  animation-timing-function: ease-in-out;
+}
+main {
+  overflow: hidden;
+}
+article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.OhNo {
+  background-image: url("img/No.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.1s; /* make text start to the right of the image */
+  animation-name: intro_fall;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
+  animation-timing-function: ease-in-out;
+  left: 25%;
+  z-index: 100;
+}
+.OhNo:hover {
+  background-image: url('img/ohnodont.png');
+  background-repeat: no-repeat;
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 45%;
+  z-index: 100;
+}
+.confetti-button {
+  background-image: url("img/Yes.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.1s; /* make text start to the right of the image */
+  animation-name: intro_fall;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
+  animation-timing-function: ease-in-out;
+  left: 65%;
+  z-index: 100;
+}
+.confetti-button:hover {
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.1s;
+  transform: scale(105%);
+}
+.canvas{
+  position: absolute;
+  z-index: 100;
+  transform: translateX(0%);
+}
+
+.star {
+  background-image: url("img/star.svg");
+  background-repeat: no-repeat;
+  mix-blend-mode: plus-lighter;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: brightness(500%);
+  mix-blend-mode: plus-lighter;
+  filter: blur(2px);
+  top: 20%;
+  left: 85%;
+  transform: scale(100%);
+  animation-name: fall;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0ms;
+}
+
+@keyframes fall {
+  0%{
+    opacity: 0;
+    top: 20%;
+  }
+  50%{
+    opacity: 100;
+  }
+  100%{
+    top: 30%;
+    opacity: 0;
+    
+  }
+  
+}
+.star2 {
+  background-image: url("img/star.svg");
+  background-repeat: no-repeat;
+  mix-blend-mode: plus-lighter;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: brightness(500%);
+  mix-blend-mode: plus-lighter;
+  filter: blur(3px);
+  top: 0%;
+  left: 55%;
+  transform: scale(80%);
+  animation-name: fall2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes fall2 {
+  0%{
+    opacity: 0;
+    top: 0%;
+  }
+  50%{
+    opacity: 100;
+  }
+  100%{
+    top: 10%;
+    opacity: 0;
+    
+  }
+  
+}
+.star3 {
+  background-image: url("img/star.svg");
+  background-repeat: no-repeat;
+  mix-blend-mode: plus-lighter;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: brightness(500%);
+  mix-blend-mode: plus-lighter;
+  filter: blur(3.5px);
+  top: -5%;
+  left: 0%;
+  transform: scale(90%);
+  animation-name: fall3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes fall3 {
+  0%{
+    opacity: 0;
+    top: -5%;
+  }
+  50%{
+    opacity: 100;
+  }
+  100%{
+    top: 0%;
+    opacity: 0;
+    
+  }
+  
+}
+.star4 {
+  background-image: url("img/star.svg");
+  background-repeat: no-repeat;
+  mix-blend-mode: plus-lighter;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: brightness(500%);
+  mix-blend-mode: plus-lighter;
+  filter: blur(5px);
+  top: 0%;
+  left: -20%;
+  transform: scale(40%);
+  animation-name: fall4;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+@keyframes fall4 {
+  0%{
+    opacity: 0;
+    top: -5%;
+  }
+  50%{
+    opacity: 100;
+  }
+  100%{
+    top: 0%;
+    opacity: 0;
+    
+  }
+  
+}
+.star5 {
+  background-image: url("img/star.svg");
+  background-repeat: no-repeat;
+  mix-blend-mode: plus-lighter;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: brightness(500%);
+  mix-blend-mode: plus-lighter;
+  filter: blur(5px);
+  top: -5%;
+  left: -5%;
+  transform: scale(40%);
+  animation-name: fall4;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.star6 {
+  background-image: url("img/star.svg");
+  background-repeat: no-repeat;
+  mix-blend-mode: plus-lighter;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: brightness(500%);
+  mix-blend-mode: plus-lighter;
+  filter: blur(7px);
+  top: -15%;
+  left: -5%;
+  transform: scale(30%);
+  animation-name: fall4;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.star7 {
+  background-image: url("img/star.svg");
+  background-repeat: no-repeat;
+  mix-blend-mode: plus-lighter;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: brightness(500%);
+  mix-blend-mode: plus-lighter;
+  filter: blur(2px);
+  top: 30%;
+  left: -5%;
+  transform: scale(70%);
+  animation-name: fall4;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.star8 {
+  background-image: url("img/star.svg");
+  background-repeat: no-repeat;
+  mix-blend-mode: plus-lighter;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: brightness(500%);
+  mix-blend-mode: plus-lighter;
+  filter: blur(2px);
+  top: 50%;
+  left: 15%;
+  transform: scale(80%);
+  animation-name: fall4;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.star9 {
+  background-image: url("img/star.svg");
+  background-repeat: no-repeat;
+  mix-blend-mode: plus-lighter;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: brightness(500%);
+  mix-blend-mode: plus-lighter;
+  filter: blur(2px);
+  top: 53%;
+  left: 30%;
+  transform: scale(60%);
+  animation-name: fall4;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.star10 {
+  background-image: url("img/star.svg");
+  background-repeat: no-repeat;
+  mix-blend-mode: plus-lighter;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: brightness(500%);
+  mix-blend-mode: plus-lighter;
+  filter: blur(3px);
+  top: 42%;
+  left: 83%;
+  transform: scale(100%);
+  animation-name: fall4;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.star11 {
+  background-image: url("img/star.svg");
+  background-repeat: no-repeat;
+  mix-blend-mode: plus-lighter;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: brightness(500%);
+  mix-blend-mode: plus-lighter;
+  filter: blur(2px);
+  top: 35%;
+  left: 40%;
+  transform: scale(50%);
+  animation-name: fall4;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.moon {
+  animation-name: rise;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
+  animation-timing-function: ease-in-out;
+  margin-left: 32%;
+  width: 600px;
+  height: 600px;
+  position: static;
+}
+@keyframes rise {
+  0% {
+    top: 10%;
+    opacity: 0;
+  }
+  40% {
+    top: -5%;
+  }
+  60% {
+    top: 5%;
+  }
+  80% {
+    top: -3%;
+  }
+  100% {
+    top: 0;
+    opacity: 100%;
+  }
+}
+
+.red {
+  width: 914px;
+  height: 841px;
+  flex-shrink: 0;
+  border-radius: 914px;
+  background: rgba(237, 141, 141, 0.5);
+  filter: blur(250px);
+  position: absolute;
+  top: -50%;
+  left: 70%;
+  z-index: -5;
+  animation-name: gradient;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes gradient {
+  0%{
+    transform: translateY(0%);
+  }
+  50%{
+    transform: translateY(20%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+  
+}
+.pink {
+  width: 914px;
+  height: 841px;
+  flex-shrink: 0;
+  border-radius: 914px;
+  background: rgba(237, 141, 187, 0.5);
+  filter: blur(250px);
+  position: absolute;
+  top: -50%;
+  left: 20%;
+  z-index: -5;
+  animation-name: gradient;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.blue {
+  width: 914px;
+  height: 841px;
+  flex-shrink: 0;
+  border-radius: 914px;
+  background: rgba(141, 237, 237, 0.5);
+  filter: blur(250px);
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  z-index: -5;
+  animation-name: gradient;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.yellow {
+  width: 914px;
+  height: 841px;
+  flex-shrink: 0;
+  border-radius: 914px;
+  background: rgba(212, 237, 141, 0.5);
+  filter: blur(250px);
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  z-index: -5;
+  animation-name: gradient;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.bubble {
+  width: 511px;
+  height: 511px;
+  flex-shrink: 0;
+  border-radius: 511px;
+  opacity: 0.28;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(213, 235, 255, 0) 14%,
+    rgba(0, 144, 249, 0.75) 100%
+  );
+  mix-blend-mode: plus-lighter;
+  box-shadow: 0px 0px 30px 10px rgba(0, 144, 249, 0.25);
+  position: relative;
+  animation-name: bubble_fall;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+@keyframes bubble_fall {
+  0%{
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  50%{
+    opacity: 0.28;
+  }
+  100%{
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  
+}
+
+.bubble1 {
+  width: 115px;
+  height: 115px;
+  flex-shrink: 0;
+  border-radius: 268px;
+  opacity: 0.28;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(213, 235, 255, 0) 14%,
+    rgba(0, 144, 249, 0.75) 100%
+  );
+  mix-blend-mode: plus-lighter;
+  box-shadow: 0px 0px 30px 10px rgba(0, 144, 249, 0.25);
+  position: absolute;
+  z-index: 60;
+  left: 85%;
+  top: 47%;
+  animation-name: bubble_fall;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.bubble2 {
+  width: 268px;
+  height: 268px;
+  flex-shrink: 0;
+  border-radius: 268px;
+  opacity: 0.28;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(213, 235, 255, 0) 14%,
+    rgba(0, 144, 249, 0.75) 100%
+  );
+  mix-blend-mode: plus-lighter;
+  box-shadow: 0px 0px 30px 10px rgba(0, 144, 249, 0.25);
+  position: absolute;
+  z-index: 0;
+  left: 73%;
+  top: 67%;
+  animation-name: bubble_fall;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.bubble3 {
+  width: 298px;
+  height: 298px;
+  flex-shrink: 0;
+  border-radius: 268px;
+  opacity: 0.28;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(213, 235, 255, 0) 14%,
+    rgba(0, 144, 249, 0.75) 100%
+  );
+  mix-blend-mode: plus-lighter;
+  box-shadow: 0px 0px 30px 10px rgba(0, 144, 249, 0.25);
+  position: absolute;
+  z-index: 60;
+  left: 82%;
+  top: 20%;
+  animation-name: bubble_fall;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.bubble4 {
+  width: 222px;
+  height: 222px;
+  flex-shrink: 0;
+  border-radius: 268px;
+  opacity: 0.28;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(213, 235, 255, 0) 14%,
+    rgba(0, 144, 249, 0.75) 100%
+  );
+  mix-blend-mode: plus-lighter;
+  box-shadow: 0px 0px 30px 10px rgba(0, 144, 249, 0.25);
+  position: absolute;
+  z-index: 60;
+  left: 66%;
+  top: 10%;
+  animation-name: bubble_fall;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.bubble5 {
+  width: 511px;
+  height: 511px;
+  flex-shrink: 0;
+  border-radius: 268px;
+  opacity: 0.28;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(213, 235, 255, 0) 14%,
+    rgba(0, 144, 249, 0.75) 100%
+  );
+  mix-blend-mode: plus-lighter;
+  box-shadow: 0px 0px 30px 10px rgba(0, 144, 249, 0.25);
+  position: absolute;
+  z-index: 60;
+  left: 80%;
+  top: -15%;
+  animation-name: bubble_fall;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.bubble6 {
+  width: 387px;
+  height: 387px;
+  flex-shrink: 0;
+  border-radius: 268px;
+  opacity: 0.28;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(213, 235, 255, 0) 14%,
+    rgba(0, 144, 249, 0.75) 100%
+  );
+  mix-blend-mode: plus-lighter;
+  box-shadow: 0px 0px 30px 10px rgba(0, 144, 249, 0.25);
+  position: absolute;
+  z-index: 60;
+  left: 45%;
+  top: -10%;
+  z-index: -3;
+  animation-name: bubble_fall;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.bubble7 {
+  width: 238px;
+  height: 238px;
+  flex-shrink: 0;
+  border-radius: 268px;
+  opacity: 0.28;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(213, 235, 255, 0) 14%,
+    rgba(0, 144, 249, 0.75) 100%
+  );
+  mix-blend-mode: plus-lighter;
+  box-shadow: 0px 0px 30px 10px rgba(0, 144, 249, 0.25);
+  position: absolute;
+  z-index: 60;
+  left: 25%;
+  top: 0%;
+  z-index: -3;
+  animation-name: bubble_fall;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.bubble8 {
+  width: 280px;
+  height: 280px;
+  flex-shrink: 0;
+  border-radius: 268px;
+  opacity: 0.28;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(213, 235, 255, 0) 14%,
+    rgba(0, 144, 249, 0.75) 100%
+  );
+  mix-blend-mode: plus-lighter;
+  box-shadow: 0px 0px 30px 10px rgba(0, 144, 249, 0.25);
+  position: absolute;
+  z-index: 60;
+  left: 5%;
+  top: 10%;
+  z-index: -3;
+  animation-name: bubble_fall;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.bubble9 {
+  width: 143px;
+  height: 143px;
+  flex-shrink: 0;
+  border-radius: 268px;
+  opacity: 0.28;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(213, 235, 255, 0) 14%,
+    rgba(0, 144, 249, 0.75) 100%
+  );
+  mix-blend-mode: plus-lighter;
+  box-shadow: 0px 0px 30px 10px rgba(0, 144, 249, 0.25);
+  position: absolute;
+  z-index: 60;
+  left: 25%;
+  top: 30%;
+  z-index: -3;
+  animation-name: bubble_fall;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.bubble10 {
+  width: 230px;
+  height: 230px;
+  flex-shrink: 0;
+  border-radius: 268px;
+  opacity: 0.28;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(213, 235, 255, 0) 14%,
+    rgba(0, 144, 249, 0.75) 100%
+  );
+  mix-blend-mode: plus-lighter;
+  box-shadow: 0px 0px 30px 10px rgba(0, 144, 249, 0.25);
+  position: absolute;
+  z-index: 60;
+  left: 5%;
+  top: 38%;
+  z-index: -3;
+  animation-name: bubble_fall;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.bubble11 {
+  width: 190px;
+  height: 190px;
+  flex-shrink: 0;
+  border-radius: 268px;
+  opacity: 0.28;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(213, 235, 255, 0) 14%,
+    rgba(0, 144, 249, 0.75) 100%
+  );
+  mix-blend-mode: plus-lighter;
+  box-shadow: 0px 0px 30px 10px rgba(0, 144, 249, 0.25);
+  position: absolute;
+  z-index: 60;
+  left: 45%;
+  top: 65%;
+  z-index: -3;
+  animation-name: bubble_fall;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+footer {
+  padding: 3%;
+  background: linear-gradient(180deg, #ebaabd 0%, #f1d4dd 100%);
+}
+.container {
+  position: relative;
+  overflow: hidden;
+}
+.made-by-me {
+  font-family: Crima;
+  font-size: 2rem;
+  background: linear-gradient(192deg, #5ab7fa 11.52%, #d9a1f3 90.74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.copy {
+  font-family: Crima;
+  font-size: 2rem;
+  background: linear-gradient(192deg, #5ab7fa 11.52%, #d9a1f3 90.74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
