@@ -69,8 +69,8 @@ article {
 .OhNo {
   background-image: url("img/No.png");
   background-repeat: no-repeat;
-  width: 40%;
-  height: 100%;
+  width: 200px;
+  height: 170px;
   transition-timing-function: ease-in-out;
   animation-name: intro_fall;
   animation-duration: 3s;
