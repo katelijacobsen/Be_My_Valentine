@@ -72,14 +72,14 @@ article {
   width: 40%;
   height: 100%;
   transition-timing-function: ease-in-out;
-  transition-delay: 0.1s; /* make text start to the right of the image */
   animation-name: intro_fall;
   animation-duration: 3s;
   animation-iteration-count: initial;
   animation-timing-function: ease-in-out;
   z-index: 100;
   position: absolute;
-  left: 15%;
+  left: 10%;
+  top: 65%;
   overflow: hidden;
 }
 .OhNo:hover {
@@ -88,6 +88,9 @@ article {
   height: 100%;
   position: absolute;
   z-index: 100;
+  scale: 80%;
+  top: 25%;
+  left: 0%;
 }
 .confetti-button {
   background-image: url("img/Yes.png");
@@ -103,7 +106,8 @@ article {
   animation-timing-function: ease-in-out;
   z-index: 100;
   position: absolute;
-  left: 70%;
+  top: 65%;
+  left: 75%;
 
 }
 .confetti-button:hover {
