@@ -85,7 +85,7 @@ article {
 .OhNo:hover {
   background-image: url('img/ohnodont.png');
   width: 36%;
-  height: 48%;
+  height: 58%;
   position: absolute;
   z-index: 100;
   scale: 60%;
