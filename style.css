@@ -95,8 +95,8 @@ article {
 .confetti-button {
   background-image: url("img/Yes.png");
   background-repeat: no-repeat;
-  width: 13.5%;
-  height: 16%;
+  width: 26%;
+  height: 26%;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   transition-delay: 0.1s; /* make text start to the right of the image */
