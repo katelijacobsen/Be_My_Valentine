@@ -760,7 +760,7 @@ article {
   top: 38%;
   z-index: -3;
   animation-name: bubble_fall;
-  animation-duration: 3s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
