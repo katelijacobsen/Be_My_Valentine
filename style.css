@@ -84,19 +84,19 @@ article {
 }
 .OhNo:hover {
   background-image: url('img/ohnodont.png');
-  width: 40%;
-  height: 100%;
+  width: 36%;
+  height: 48%;
   position: absolute;
   z-index: 100;
-  scale: 80%;
-  top: 25%;
-  left: 0%;
+  scale: 60%;
+  top: 50%;
+  left: -1%;
 }
 .confetti-button {
   background-image: url("img/Yes.png");
   background-repeat: no-repeat;
-  width: 60%;
-  height: 60%;
+  width: 13.5%;
+  height: 16%;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   transition-delay: 0.1s; /* make text start to the right of the image */
@@ -114,7 +114,7 @@ article {
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   transition-delay: 0.1s;
-  transform: scale(105%);
+  transform: scale(110%);
 }
 .canvas{
   position: absolute;
